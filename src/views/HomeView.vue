@@ -43,11 +43,11 @@
 import axios from "axios";
 import { ref, onMounted } from "vue";
 const products = ref([]);
+const API_PATH = import.meta.env.VITE_API_PATH;
 onMounted(async () => {
   products.value = await getAllProduct();
 });
 const getAllProduct = async () => {
-  const API_PATH = import.meta.env.VITE_API_PATH;
   let data = [];
   data = await axios
     .get(`${API_PATH}/getallproduct`)

@@ -126,8 +126,10 @@ import { RouterView, RouterLink ,useRouter } from 'vue-router';
 const router = useRouter()
 const menuList = [
   { path:"/", name: "home"},
-  { path:"/create", name: "Create"}
+  { path:"/create", name: "Create"},
+  {path: "/chat", name: "Chat"}
 ]
+
 
 </script>
 
